@@ -2,7 +2,7 @@
 
 ### Uses: 
 * Python (https://seleniumhq.github.io/selenium/docs/api/py/api.html)
-* Lettuce, ie Cucumber for Python (http://lettuce.it/index.html) 
+* Lettuce, ie Cucumber for Python (https://github.com/gabrielfalcao/lettuce) 
 * Selenium-Python (http://selenium-python.readthedocs.io/index.html)
 
 ### How to run (maybe):
