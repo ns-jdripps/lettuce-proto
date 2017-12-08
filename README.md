@@ -50,9 +50,13 @@ def results_should_contain(step, result):
 * 2 dependencies only (Selenium and Lettuce)
 * Allows for page objects
 * Unrelated to Node
+* Uses Python
 
 ### Cons:
 * Not compatible with Python versions 3.x
+
+### To consider:
+* Getting set up with `unittest` is even simpler. There's an example in `./py-unittest`, runnable with `python login.py`.
 
 ### Useful reading
 * http://selenium-python.readthedocs.io/api.html
