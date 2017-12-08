@@ -8,6 +8,5 @@ def setup_browser():
 @after.all
 def teardown_browser(total):
   world.browser.quit()
-  print total
   print "Scenarios passed: %d\n Scenarios ran: %d" % (total.scenarios_passed, total.scenarios_ran)
 
