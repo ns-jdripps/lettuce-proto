@@ -2,7 +2,7 @@
 
 ### Uses: 
 * Python (https://seleniumhq.github.io/selenium/docs/api/py/api.html)
-* Lettuce (http://lettuce.it/index.html) 
+* Lettuce, ie Cucumber for Python (http://lettuce.it/index.html) 
 * Selenium-Python (http://selenium-python.readthedocs.io/index.html)
 
 ### To run (maybe):
@@ -16,6 +16,33 @@
 8. Run `pip install -U selenium`
 9. Finally, run  `lettuce`
 
+### Test script:
+```
+Feature: Googling stuff
+
+Scenario: Search NS
+  Given I go to "http://www.google.com/"
+  When I search "Narrative Science"
+  Then the results should contain "Narrative Science | Natural Language Generation Technology"
+```
+
+### Step definitions:
+```
+@step('I go to "([^"]*)"')
+def go_to_site(step, url):
+    world.browser.get(url)
+
+@step('I search "([^"]*)"')
+def input_search_term(step, search_term):
+    search_input = world.browser.find_element_by_css_selector(".gsfi")
+    search_input.send_keys(search_term)
+    search_input.submit()
+
+@step('the results should contain "([^"]*)"')
+def results_should_contain(step, result):
+    assert world.browser.find_element_by_link_text(result)
+```
+### Test result:
 ![result screenshot](https://github.com/ns-ckao/auto-proto/blob/master/lib/results.png)
 
 ### Useful reading
