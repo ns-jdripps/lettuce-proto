@@ -16,9 +16,6 @@ class InstagramLogin(unittest.TestCase):
   def testPasswordInputPresent(self):
     self.assertTrue(self.browser.find_element_by_css_selector('input[type="password"]'))
 
-  def testElemNotPresent(self):
-    self.assertFalse(self.browser.find_element_by_css_selector('#something'))
-
 if __name__ == '__main__':
   suite = unittest.TestLoader().loadTestsFromTestCase(InstagramLogin)
   unittest.TextTestRunner(verbosity=2).run(suite)
