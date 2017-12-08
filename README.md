@@ -16,6 +16,8 @@
 8. Run `pip install -U selenium`
 9. Finally, run  `lettuce`
 
+![result screenshot](https://github.com/ns-ckao/auto-proto/blob/master/lib/results.png)
+
 ### Useful reading
 * http://selenium-python.readthedocs.io/api.html
 * https://the-creative-tester.github.io/Python-Web-Browser-Automation-Lettuce/
