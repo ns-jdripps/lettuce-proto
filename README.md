@@ -5,7 +5,7 @@
 * Lettuce, ie Cucumber for Python (http://lettuce.it/index.html) 
 * Selenium-Python (http://selenium-python.readthedocs.io/index.html)
 
-### To run (maybe):
+### How to run (maybe):
 1. Clone repo
 2. `cd` into the repo
 3. Run `python -V`, should ouput something like `Python 2.7.13`
@@ -44,6 +44,15 @@ def results_should_contain(step, result):
 ```
 ### Test result:
 ![result screenshot](https://github.com/ns-ckao/auto-proto/blob/master/lib/results.png)
+
+### Pros:
+* Really easy to get started and write tests.
+* 2 dependencies only (Selenium and Lettuce)
+* Allows for page objects
+* Unrelated to Node
+
+### Cons:
+* Not compatible with Python versions 3.x
 
 ### Useful reading
 * http://selenium-python.readthedocs.io/api.html
