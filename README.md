@@ -20,7 +20,7 @@
 
 ### Useful reading
 * http://selenium-python.readthedocs.io/api.html
-* https://the-creative-tester.github.io/Python-Web-Browser-Automation-Lettuce/
+* https://the-creative-tester.github.io/Python-Web-Browser-Automation-Lettuce/ (really good)
 * https://cucumber.io/docs
 * http://seleniumhq.github.io/selenium/docs/api/py/index.html
 * http://lettuce.it/tutorial/simple.html#tutorial-simple
