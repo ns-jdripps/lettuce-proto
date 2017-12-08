@@ -16,3 +16,6 @@ def input_search_term(step, search_term):
 def results_should_contain(step, result):
     assert world.browser.find_element_by_link_text(result)
 
+@step('I should see "([^"]*)"')
+def should_see(step, welcome_text):
+    assert world.browser.find_element_by_xpath("//*[text()='%s']" % welcome_text)
