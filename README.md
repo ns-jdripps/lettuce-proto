@@ -10,7 +10,7 @@
 2. `cd` into the repo
 3. Run `python -V`, should ouput something like `Python 2.7.13`
 4. Run `pyenv install <python version>`, version must be 2.7.x (Lettuce is not compatible with v3+)
-5. Run `pyenv virtual env <python version> lettuce-proto`
+5. Run `pyenv virtualenv <python version> lettuce-proto`
 6. Run `source activate lettuce-proto`
 7. Run `pip install lettuce`
 8. Run `pip install -U selenium`
